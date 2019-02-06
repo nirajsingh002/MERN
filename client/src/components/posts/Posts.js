@@ -6,11 +6,10 @@ import PostFeed from "./PostFeed";
 import Spinner from "../common/Spinner";
 import { getPosts } from "../../actions/postActions";
 class Posts extends Component {
-  componendDidMount() {
+  componentDidMount() {
     this.props.getPosts();
   }
   render() {
-    console.log("post", this.props);
     const { posts, loading } = this.props.post;
     let postContent;
 
